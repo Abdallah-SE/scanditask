@@ -1,0 +1,6 @@
+#on to use mod_rewrite
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#  Redirect any request with the index.php 
+RewriteRule ^(.*)$ /index.php/
