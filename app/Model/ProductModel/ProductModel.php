@@ -62,4 +62,15 @@ class ProductModel extends AbstractModel{
     public function createProduct() {
         
     }
+  /*  public function callChildMethod($value) {
+        if(method_exists($this, 'setSize')){
+            $this->setSize($value);
+        }
+        if(method_exists($this, 'setWeight')){
+            $this->setWeight($value);
+        }
+        if(method_exists($this, 'setHeight')){
+            $this->setHeight($value);
+        }
+    }*/
 }

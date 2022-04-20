@@ -4,3 +4,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 #  Redirect any request with the index.php 
 RewriteRule ^(.*)$ /index.php/
+#RewriteRule ^users/index.php?$ /toturial_r/core/users/index.php [L]
+#RewriteRule ^/addproduct/?$ /products/addproduct [L]
+#http://localhost/scanditask/public/index.php/addproduct/addproduct

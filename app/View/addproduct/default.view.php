@@ -28,7 +28,7 @@
             </div>
             <div class="select_group">
                 <label for="productType">Type Switcher</label>
-                <select id="productType" name="productType">
+                <select id="productType">
                     <option></option>
                     <option id="bookType"  value="Book">Book</option>
                     <option id="DVDType"  value="DVD">DVD</option>
@@ -39,33 +39,33 @@
         <div class="selectedProductTypeDiv"><!-- Div container for  When the user select the product type -->
         <div id="book">
             <label for="weight">Weight (KG) </label>
-            <input type="int" name="unitValue[]" id="weight" value="<?= isset($_POST['weight'])? $_POST['weight'] : ''?>">
+            <input type="int" name="weight" id="weight" value="<?= isset($_POST['weight'])? $_POST['weight'] : ''?>">
             <span class="error" aria-live="polite"></span>
-            <input type="hidden" id="typeBook" name="unit" value="Book">
+            <input type="hidden" id="typeBook" name="unitBook" value="Book">
         </div>
         <div id="DVD">
             <label for="size">Size (MB) </label>
-            <input type="int" name="unitValue[]" id="size" value="<?= isset($_POST['size'])? $_POST['size'] : ''?>">
+            <input type="int" name="size" id="size" value="<?= isset($_POST['size'])? $_POST['size'] : ''?>">
             <span class="error" aria-live="polite"></span>
-            <input type="hidden" id="typeDVD" name="unit" value="DVD">
+            <input type="hidden" id="typeDVD" name="unitDVD" value="DVD">
         </div>  
         <div id="furniture">
             <div id="height_group">
                 <label for="height">Height (CM) </label>
-                <input type="int" name="unitValue[]" id="height" value="<?= isset($_POST['height'])? $_POST['height'] : ''?>">
+                <input type="int" name="height" id="height" value="<?= isset($_POST['height'])? $_POST['height'] : ''?>">
                 <span style="height: 25px;" class="error" aria-live="polite"></span>
             </div>
             <div id="width_group">
                 <label for="width">Width (CM) </label>
-                <input type="int" name="unitValue[]" id="width" value="<?= isset($_POST['width'])? $_POST['width'] : ''?>">
+                <input type="int" name="width" id="width" value="<?= isset($_POST['width'])? $_POST['width'] : ''?>">
                 <span style="height: 25px;" class="error" aria-live="polite"></span>
             </div>
             <div id="length_group">
               <label for="length">Length (CM) </label>
-              <input type="int" name="unitValue[]" id="length" value="<?= isset($_POST['length'])? $_POST['length'] : ''?>"> 
+              <input type="int" name="length" id="length" value="<?= isset($_POST['length'])? $_POST['length'] : ''?>"> 
               <span style="height: 25px;" class="error" aria-live="polite"></span>
             </div>
-            <input type="hidden" id="typeFurniture" name="unit" value="Furniture">
+            <input type="hidden" id="typeFurniture" name="unitFurniture" value="Furniture">
         </div>   
         <div id="textProductUnit">
             

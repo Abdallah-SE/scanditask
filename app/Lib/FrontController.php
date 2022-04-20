@@ -16,7 +16,7 @@ class FrontController
     /*
      * 
      */
-    private $_controller = 'home';
+    private $_controller = '/';
     private $_action = 'default';
     private array $_parameters = array();
     protected $prefixes = array();
